@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>XYZ Bank - Transaction</title>
+  </head>
+  <body>
+    <header>
+      <h1>XYZ Bank</h1>
+    </header>
+    <main>
+      <h2>Transaction Page</h2>
+      <div id="userInfo"></div>
+      <!-- Added to display user info -->
+      <form id="transactionForm">
+        <input
+          type="number"
+          id="transferAccountNo"
+          placeholder="Account No to transfer"
+          required
+        />
+        <input
+          type="number"
+          id="transferAmount"
+          placeholder="Amount"
+          required
+        />
+        <button type="submit">Transfer</button>
+      </form>
+      <button onclick="logout()">Logout</button>
+      <button onclick="location.href='index.html'">Back</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

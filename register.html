@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>XYZ Bank - Register</title>
+  </head>
+  <body>
+    <header>
+      <h1>XYZ Bank</h1>
+    </header>
+    <main>
+      <h2>Register Page</h2>
+      <form id="registerForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="accountNo" placeholder="Account No" required />
+        <input type="password" id="pin" placeholder="Pin" required />
+        <input
+          type="number"
+          id="amount"
+          placeholder="Initial Amount"
+          required
+        />
+        <button type="button" id="fingerprintButton">Fingerprint</button>
+        <!-- Fingerprint button -->
+        <div id="fingerprintAnimation" style="display: none">
+          <!-- Animation container -->
+          <img src="fingerprint.gif" alt="Fingerprint Animation" />
+        </div>
+        <button type="submit" id="registerButton" style="display: none">
+          Register
+        </button>
+        <!-- Initially hidden -->
+      </form>
+      <button onclick="location.href='index.html'">Back</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>XYZ Bank - Login</title>
+  </head>
+  <body>
+    <header>
+      <h1>XYZ Bank</h1>
+    </header>
+    <main>
+      <h2>Login Page</h2>
+      <form id="loginForm">
+        <input
+          type="number"
+          id="loginAccountNo"
+          placeholder="Account No"
+          required
+        />
+        <input type="password" id="loginPin" placeholder="Pin" required />
+        <button type="button" id="fingerprintButton">Fingerprint</button>
+        <!-- Fingerprint button -->
+        <div id="fingerprintAnimation" style="display: none">
+          <!-- Animation container -->
+          <img src="fingerprint.gif" alt="Fingerprint Animation" />
+        </div>
+        <button type="submit" id="loginButton" style="display: none">
+          Login
+        </button>
+        <!-- Initially hidden -->
+      </form>
+      <button onclick="location.href='index.html'">Back</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
